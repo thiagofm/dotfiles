@@ -36,6 +36,9 @@ values."
      spotify
      xkcd
      org
+     (colors :variables
+             colors-enable-rainbow-indentifiers t
+             colors-enable-nyan-cat-progress-bar t)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom
