@@ -160,7 +160,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -199,6 +199,11 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
+  (setq-default dotspacemacs-default-font '("Inconsolata"
+                                            :size 16
+                                            :weight normal
+                                            :width normal
+                                            :powerline-scale 1.1))
   )
 
 (defun dotspacemacs/user-config ()
